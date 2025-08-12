@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+</head>
+<body style="text-align:center; font-family: Arial, sans-serif;">
+    <h1>Prediction Result</h1>
+    <h2>The image is: {{ prediction }}</h2>
+
+    {% if image_path %}
+        <img src="{{ image_path }}" alt="Uploaded Image" width="300">
+    {% endif %}
+
+    <br><br>
+    <a href="/">Upload Another Image</a>
+</body>
+</html>
